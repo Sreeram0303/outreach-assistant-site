@@ -11,7 +11,7 @@
 </head>
 <body>
   <h1>Outreach Assistant: Privacy Policy</h1>
-  <p><i>Last updated: 16 October 2026</i></p>
+  <p><i>Last updated: 19 October 2026</i></p>
 
   <h2>Who runs it</h2>
   <p>Outreach Assistant is a personal, non-commercial project operated by an individual developer
@@ -24,20 +24,30 @@
   <p>To send on your behalf, we store an OAuth refresh token for your account, encrypted at rest.
      You can revoke it at any time at
      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p>We also store the email address of the Gmail account you connect, to show you which account
+     mail is sent from and to record it on each sent email.</p>
 
   <h2>Other data we store</h2>
   <ul>
-    <li>Your Telegram user ID (to restrict access to approved users).</li>
-    <li>Post text you paste into the bot, the drafts generated from it, and your edit instructions.</li>
-    <li>A sent log: recipient address, subject, time sent and the Gmail message ID, used to prevent
-        duplicate emails and to show your own statistics.</li>
-    <li>The resume files you upload, so the right one can be attached.</li>
+    <li>Your Telegram user ID (to restrict access to approved users) and your Telegram first name
+        (to address you in the bot).</li>
+    <li>Post text you paste into the bot, and the link to the post if you share one. The link is
+        stored only to recognise a post you have already acted on and to let you reopen it; we never
+        visit it.</li>
+    <li>Details taken from each post: the poster's name, company, the role advertised and the email
+        address to write to. This is information about other people that appears in posts you
+        share.</li>
+    <li>The drafts generated from each post (subject and body) and your edit instructions.</li>
+    <li>A sent log: recipient address, time sent, the Gmail address it was sent from, and the Gmail
+        message and thread IDs, used to prevent duplicate emails and to show your own statistics.</li>
+    <li>The resume files you upload and the text extracted from them, so the right one can be
+        attached and used to write the email.</li>
   </ul>
 
   <h2>Service providers</h2>
-  <p>Post text and drafts are processed by a large language model provider (such as Google Gemini or
-     Groq) to generate the email, and technical traces of those calls are stored with an
-     observability provider (Langfuse). Data is stored on our hosting and database providers.
+  <p>Post text, drafts and the text of the selected resume are processed by a large language model
+     provider (such as Google Gemini or Groq) to generate the email, and technical traces of those
+     calls are stored with an observability provider (Langfuse). Data is stored on our hosting and database providers.
      Each provider handles data under its own terms; some free-tier LLM services may retain
      submitted text or use it to improve their models. We do not send Google user data (your Gmail
      token or messages) to any LLM provider.</p>
